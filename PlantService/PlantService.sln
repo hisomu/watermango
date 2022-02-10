@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantService", "PlantService\PlantService.csproj", "{853F121C-E00A-468A-AF24-48D42958D37B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PlantService", "PlantService\PlantService.csproj", "{853F121C-E00A-468A-AF24-48D42958D37B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantService.Tests", "PlantService.Tests\PlantService.Tests.csproj", "{45A0C8F3-4D54-4F7D-98C6-9D57689ADA07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{853F121C-E00A-468A-AF24-48D42958D37B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{853F121C-E00A-468A-AF24-48D42958D37B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{853F121C-E00A-468A-AF24-48D42958D37B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45A0C8F3-4D54-4F7D-98C6-9D57689ADA07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45A0C8F3-4D54-4F7D-98C6-9D57689ADA07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45A0C8F3-4D54-4F7D-98C6-9D57689ADA07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45A0C8F3-4D54-4F7D-98C6-9D57689ADA07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

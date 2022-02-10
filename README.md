@@ -17,5 +17,10 @@ Your application should meet the following requirements:
 Run `dotnet run` for the backend dev server. 
 Run `npm start` for the frontend dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Running unit tests
+
+Run `dotnet test` to execute the backend unit tests
+
 ## Approach
 * Created a background service along with the WebAPI to push out state updates using SignalR
+* Added unit tests on backend 

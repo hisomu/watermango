@@ -29,7 +29,7 @@ namespace PlantService.Services
         /// Update state of watering a plant
         /// </summary>
         /// <param name="state"></param>
-        private void WaterMe(object state)
+        public void WaterMe(object state)
         {
             _plantBiz.GetAll().ForEach(plant =>
             {

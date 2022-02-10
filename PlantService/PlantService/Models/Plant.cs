@@ -9,6 +9,11 @@ namespace PlantService.Models
         public State State { get; set; }
         public string ImageUrl { get; set; }
         public DateTime LastUpdated { get; set; }
+
+        public Plant Clone()
+        {
+            return (Plant)this.MemberwiseClone();
+        }
     }
     public enum State
     {
