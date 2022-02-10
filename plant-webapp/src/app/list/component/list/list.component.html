@@ -1,0 +1,18 @@
+
+<div class="container" *ngIf="(plants$ | async) as plants">
+  <h1>Plants</h1>
+    <div class="cards">
+    <ng-container *ngFor="let plant of plants; trackBy: trackBySvc.trackByIndex">
+      <mat-card class="card" [ngClass]="{ 'dying': plant.state === 0 }">
+        <mat-card-header>
+          <mat-card-title>{{plant.name}}</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image class="img" src="{{plant.imageUrl}}" alt="">
+        <mat-card-actions>
+          <button *ngIf="plant.state !== 2" mat-button color="primary" class="btn" (click)="start(plant.id)" mat-flat-button [disabled]="plant.state == 3">WATER<ng-container *ngIf="plant.state === 0"> (DYING)</ng-container></button>
+          <button *ngIf="plant.state === 2" mat-button color="primary" class="btn" (click)="stop(plant.id)" mat-flat-button>STOP WATERING</button>
+        </mat-card-actions>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>
